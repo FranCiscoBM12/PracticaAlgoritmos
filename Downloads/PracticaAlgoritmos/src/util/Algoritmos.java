@@ -21,4 +21,17 @@ public abstract class Algoritmos {
             return b;
         }
         }
+	/**
+	 * 
+	 * @param numero
+	 * @return devuelve el factorial de numero.
+	 */
+	public static int factorial(int numero) {
+		int factorial = 1;
+		for(int i=1;i<=numero;i++) {
+			factorial*=i;		
+		}
+		return factorial;		
+	}
+	
 }
