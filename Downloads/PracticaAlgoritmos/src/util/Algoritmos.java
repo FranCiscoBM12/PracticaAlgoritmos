@@ -33,5 +33,23 @@ public abstract class Algoritmos {
 		}
 		return factorial;		
 	}
-	
+	/**
+	 * 
+	 * @param numero
+	 * @return 	devuelve true o false en función de si es primo o no.
+	 */
+	public static boolean esPrimo(int numero) {
+		if (numero <= 1) {
+            return false;
+        }
+        if (numero == 2) {
+            return true;
+        }
+        for (int i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
